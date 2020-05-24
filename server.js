@@ -7,6 +7,7 @@ app.get(/.*/,function(req,res){
   res.sendFile(__dirname+"/dist/index.html")
 })
 
-app.listen(port);
+app.listen(port,()=>{
+  console.log("server started in  " +port);
+});
 
-console.log('server started')
